@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Formulários - HTML</title>
+</head>
+<body>
+    <h1 style="font-weight: bold; color: rgb(108, 0, 0)">Cadastro de Imóvel</h1>
+    <form action="" method="GET">
+        <fieldset>
+            <legend>Informações Gerais:</legend>
+            <div>
+                <label for="tipo">Tipo de Imóvel:</label>
+                <select name="tipo">
+                    <option value="casa">Casa</option>
+                    <option value="ap">Apartamento</option>
+                </select>
+            </div>
+            <div>
+                <label for="dataConstrucao">Data de Construção:</label>
+                <input type="date" name="dataConstrucao">
+            </div>
+            <div>
+                <input type="radio" name="imovel" value="novo"> Imóvel Novo
+                <input type="radio" name="imovel" value="usado"> Imóvel Usado
+            </div>
+            <div>
+                <label for="endereco">Endereço:</label>
+                <br>
+                <input type="text" name="endereco">
+            </div>
+            <div>
+                <label for="descrica0">Descrição:</label>
+                <br>
+                <textarea></textarea>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Outras Características</legend>
+            <table>
+                <tr>
+                    <td>
+                        <input type="checkbox" name="outras[]" value="piscina"> Piscina
+                    </td>
+                    <td>
+                        <input type="checkbox" name="outras[]" value="banheira"> Banheira de Hidromassagem
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="checkbox" name="outras[]" value="churrasqueira"> Churrasqueira
+                    </td>
+                    <td>
+                        <input type="checkbox" name="outras[]" value="acabamento"> Acabamento em porcelanato
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="checkbox" name="outras[]" value="aquecedor"> Aquecedor Solar
+                    </td>
+                    <td>
+                        <input type="checkbox" name="outras[]" value="lavabo"> Lavabo
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="checkbox" name="outras[]" value="closet"> Closet
+                    </td>
+                    <td>
+                        <input type="checkbox" name="outras[]" value="armarios"> Armários
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+        <button type="submit">Cadastrar</button>
+        <button type="reset">Limpar</button>
+    </form>
+</body>
+</html>
