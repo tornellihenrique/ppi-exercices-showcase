@@ -15,8 +15,6 @@ body {
     width: 30%;
     height: 80%;
     background-color: white;
-    overflow: hidden;
-    overflow-y: auto;
 }
 
 .container h1 {
@@ -32,6 +30,8 @@ body {
     display: grid;
     grid-template-columns: 50% 50%;
     grid-auto-rows: 60px;
+    overflow: hidden;
+    overflow-y: auto;
 }
 
 .item {
