@@ -1,0 +1,41 @@
+body {
+    background-image: url('bg1.jpg');
+    font-family: sans-serif;
+    color: #777
+}
+
+h1 {
+    color: #555;
+}
+
+div {
+    margin-top: 20px;
+}
+
+fieldset {
+    margin-bottom: 20px;
+}
+
+.container {
+    width: 70%;
+    margin: 20px auto;
+    background-color: #fff;
+    border: 1px solid #777;
+    border-radius: 10px;
+    padding: 20px 40px;
+}
+
+input[type=text], input[type=date] {
+    height: 20px;
+    width: 150px;
+}
+
+textarea {
+    width: 400px;
+    height: 80px;
+}
+
+input, textarea, select {
+    border: 1px solid #777;
+    border-radius: 1px;
+}
