@@ -35,9 +35,6 @@ body {
 }
 
 .item {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     font-weight: bold;
     box-sizing: border-box;
 }
@@ -45,4 +42,17 @@ body {
 .item:hover {
     background-color: rgba(79, 173, 219, .4);
     cursor: pointer;
+}
+
+.item span {
+    float: left;
+    padding: 2px 6px;
+    position: absolute;
+    color: #fff;
+}
+
+.item p {
+    margin: 0;
+    margin-top: 10%;
+    text-align: center;
 }
