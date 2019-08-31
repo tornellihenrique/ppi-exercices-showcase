@@ -12,11 +12,31 @@ body {
 }
 
 .container {
-    width: 30%;
     height: 80%;
     background-color: white;
     overflow: hidden;
     overflow-y: auto;
+}
+
+/* Mobile Styles */
+@media only screen and (max-width: 1000px) {
+    .container {
+        width: 70%;
+    }
+}
+
+/* Tablet Styles */
+@media only screen and (min-width: 1001px) and (max-width: 1300px) {
+    .container {
+        width: 50%;
+    }
+}
+
+/* Desktop Styles */
+@media only screen and (min-width: 1301px) {
+    .container {
+        width: 30%;
+    }
 }
 
 .container h1 {
