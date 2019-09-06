@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercicio 2 - JS</title>
+</head>
+<body>
+    <img onmouseover="imgOver()" onmouseout="imgOut()" src="./assets/CasaFoto1.jpg">
+    <script>
+        function imgOver() {
+            document.querySelector('img').width *= 2;
+        }
+        function imgOut() {
+            document.querySelector('img').width /= 2;
+        }
+    </script>
+</body>
+</html>

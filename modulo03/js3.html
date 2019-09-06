@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercicio 3 - JS</title>
+</head>
+<body>
+    <img onmouseover="imgOver(this)" onmouseout="imgOut(this)" src="./assets/CasaFoto1.jpg" width="400px">
+    <img onmouseover="imgOver(this)" onmouseout="imgOut(this)" src="./assets/CasaFoto1.jpg" width="400px">
+    <img onmouseover="imgOver(this)" onmouseout="imgOut(this)" src="./assets/CasaFoto1.jpg" width="400px">
+    <img onmouseover="imgOver(this)" onmouseout="imgOut(this)" src="./assets/CasaFoto1.jpg" width="400px">
+    <img onmouseover="imgOver(this)" onmouseout="imgOut(this)" src="./assets/CasaFoto1.jpg" width="400px">
+    <script>
+        function imgOver(el) {
+            el.style.border = '5px solid blue';
+        }
+        function imgOut(el) {
+            el.style.border = '0';
+        }
+    </script>
+</body>
+</html>

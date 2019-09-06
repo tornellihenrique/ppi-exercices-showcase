@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Exercicio 4 - JS</title>
+</head>
+<script>
+    function calculaDiscriminante(a, b, c) {
+        return Math.pow(b, 2) - (4 * a * c);
+    }
+
+    function testaDiscriminante() {
+        var values = prompt('Digite os 3 valores "A B C":');
+        var result = calculaDiscriminante(values.split(' ')[0], values.split(' ')[1], values.split(' ')[2]);
+        if (Number.isNaN(result)) {
+            alert('valores incoerentes!');
+        }
+        alert('Resultado do discriminante: ' + result);
+    }
+
+    testaDiscriminante();
+</script>
+
+<body>
+</body>
+
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercicio 1 - JS</title>
+</head>
+<body>
+    <h1 onclick="h1Click()">Título</h1>
+    <p onmouseover="pOver()" onmouseout="pOut()" onclick="pClick()">Paragrafo</p>
+    <script>
+        function h1Click() {
+            document.querySelector('h1').style.color = 'blue';
+        }
+        function pOver() {
+            document.querySelector('p').style.fontWeight = 'bolder';
+        }
+        function pOut() {
+            document.querySelector('p').style.fontWeight = 'normal';
+        }
+        function pClick() {
+            document.querySelector('p').innerHTML = 'Obrigado pelo click!';
+        }
+    </script>
+</body>
+</html>
