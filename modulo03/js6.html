@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Exercicio 6 - JS</title>
+</head>
+
+<form name="calculoPeso" method="" action="">
+    <div>
+        <label for="sex">Sexo:</label>
+        <br>
+        <input type="radio" id="sex" name="sex" value="M">
+        <label for="M">Masculino</label>
+        <input type="radio" id="sex" name="sex" value="F">
+        <label for="F">Feminino</label>
+    </div>
+    <div>
+        <label for="heigth">Altura:</label>
+        <br>
+        <input type="number" id="heigth" name="heigth">
+    </div>
+</form>
+<button onclick="calcularPeso()">Calcular</button>
+<h1 id="result"></h1>
+
+<script>
+    function calcularPeso() {
+        var radios = document.getElementsByName('sex');
+        var radioSelected = getSelectedRadioValue(radios);
+        if (!radioSelected) {
+            alert('Selecione um sexo');
+            return;
+        }
+        var heigth = document.forms['calculoPeso']['heigth'].value;
+        if (heigth == '' || !heigth) {
+            alert('Digite a altura');
+            return;
+        }
+        var weight = 0;
+        if (radioSelected == 'M') {
+            weight = (72.7 * heigth) - 58;
+        } else if (radioSelected == 'F') {
+            weight = (62.1 * heigth) - 44.7;
+        }
+        document.getElementById('result').innerHTML = 'Peso ideal: ' + weight + 'kg';
+    }
+
+    function getSelectedRadioValue(radios) {
+        for (var i = 0, length = radios.length; i < length; i++) {
+            if (radios[i].checked) {
+                return radios[i].value;
+            }
+        }
+
+        return null;
+    }
+</script>
+
+<body>
+</body>
+
+</html>

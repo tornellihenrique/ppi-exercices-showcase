@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Exercicio 5 - JS</title>
+</head>
+
+<form name="calculoDisc" method="" action="">
+<label for="a">A:</label>
+<input type="number" id="a" name="a">
+<label for="b">B:</label>
+<input type="number" id="b" name="b">
+<label for="c">C:</label>
+<input type="number" id="c" name="c">
+</form>
+<button onclick="testaDiscriminante()">Calcular</button>
+<h1 id="result"></h1>
+
+<script>
+    function calculaDiscriminante(a, b, c) {
+        return Math.pow(b, 2) - (4 * a * c);
+    }
+
+    function testaDiscriminante() {
+        var a = document.forms['calculoDisc']['a'].value;
+        if (a == '') {
+            alert('O campo "A" deve ser preenchido');
+            return;
+        }
+        var b = document.forms['calculoDisc']['b'].value;
+        if (b== '') {
+            alert('O campo "B" deve ser preenchido');
+            return;
+        }
+        var c = document.forms['calculoDisc']['c'].value;
+        if (c == '') {
+            alert('O campo "C" deve ser preenchido');
+            return;
+        }
+
+        var result = calculaDiscriminante(Number(a), Number(b), Number(c));
+        if (Number.isNaN(result)) {
+            alert('valores incoerentes!');
+            return;
+        }
+        document.getElementById('result').innerHTML = 'Resultado: ' + result;
+    }
+</script>
+
+<body>
+</body>
+
+</html>

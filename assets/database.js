@@ -49,4 +49,14 @@ const database = [
         "url": "modulo03/js4.html",
         "module": 3
     },
+    {
+        "title": "JS 5",
+        "url": "modulo03/js5.html",
+        "module": 3
+    },
+    {
+        "title": "JS 6",
+        "url": "modulo03/js6.html",
+        "module": 3
+    },
 ]
