@@ -19,6 +19,18 @@ database.forEach(exercise => {
         case 4:
             exModule.style.backgroundColor = 'blue';
             break;
+        case 5:
+            exModule.style.backgroundColor = 'yellow';
+            break;
+        case 6:
+            exModule.style.backgroundColor = 'gray';
+            break;
+        case 7:
+            exModule.style.backgroundColor = 'black';
+            break;
+        case 8:
+            exModule.style.backgroundColor = 'lightblue';
+            break;
     }
 
     var element = document.createElement('div');

@@ -59,4 +59,14 @@ const database = [
         "url": "modulo03/js6.html",
         "module": 3
     },
+    {
+        "title": "Formulário PHP",
+        "url": "modulo07/form.html",
+        "module": 7
+    },
+    {
+        "title": "Listagem de dados",
+        "url": "modulo07/data.php",
+        "module": 7
+    },
 ]
