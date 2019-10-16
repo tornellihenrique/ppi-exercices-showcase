@@ -23,7 +23,7 @@
 <body class="d-flex align-items-center">
     <div class="container text-center text-white w-50">
         <h2>Bem vindo, <?php echo "$nome $sobrenome" ?></h2>
-        <a href="index.html" class="btn btn-primary mt-3">Voltar</a>
+        <a href="form.html" class="btn btn-primary mt-3">Voltar</a>
     </div>
 </body>
 </html>

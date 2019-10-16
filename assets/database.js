@@ -69,4 +69,9 @@ const database = [
         "url": "modulo07/data.php",
         "module": 7
     },
+    {
+        "title": "Cadastro de Informações",
+        "url": "modulo08/",
+        "module": 8
+    },
 ]
